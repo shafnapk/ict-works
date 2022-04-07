@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="style.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    
+</head>
+
+    <body class="mybgbody" >
+
+        <div class="container-fluid mybg">
+            <div class="row">
+                <div class="col-4">
+                 </div>
+                 <div class="col-3 logcol-4 mycard1" >
+                    <div class="card">
+                        <div class="card-body mycard">
+                            <h3 class="card-title text-center">Log In</h3>
+                            <div class="card-text">   
+                                              
+                                <form action="#">
+                                    <div >
+                                        <!--<label for="username">Username</label>-->
+                                        <input type="text" id="username" class="form-control form-control-sm" placeholder="username"  onkeyup="return usernamevaldation()">
+                                        <label for="firstname" id="erroruser" style="color: red;"></label>
+                                        <br>
+                                        <!--<label for="password">Password</label>-->                                        
+                                        <input type="password" placeholder="password" class="form-control form-control-sm"  onkeyup="return passwordvaldation()"  id="password">
+                                        <label for="password" id="errorp" style="color: red;"></label>
+                                    </div>
+                                    <br>
+                                    <button type="submit" id="login" class="btn btn-primary btn-block" onclick="validate(gotoApp);">Sign in</button>   
+                                    <br>
+                                        <label for="login" id="invalidCredentials" style="color: red;"></label>
+                                    <br>
+                                    <div class="sign-up" id="loginf">
+                                  
+                                      
+                                        <!-- <a href="#" style="float:right;font-size:12px;">Forgot password?</a> -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+               <!-- <div class="col-2">
+                 </div>-->
+             <script src="loginjs.js"></script>
+    
+</body>
+</html>
