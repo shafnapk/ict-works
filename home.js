@@ -25,10 +25,10 @@ function createTodoAppList(element){
 
     let comp = "<div class='row' style='height: 60px;margin:5px;'>" +
                "<div class='col-3' style='height: 60px;'></div>" + 
-               "<div class='col-6' style='height: 60px;background-color: aqua;'> <div class='row'> " +
-                    "<div class='col-3'> <input id=app_"+ element.id + " " + checked +" type='checkbox' onclick='countChecks("+element.id+")'/>  </div>" +
-                    "<div class='col-9'>" + element.title + "</div> " + 
-                "</div></div>" +
+               "<div class='col-6' style='height: 60px;background-color: aqua;line-height:3.5;border-radius:10px'> " +
+                    "&nbsp;&nbsp; <input id=app_"+ element.id + " " + checked +" type='checkbox' onclick='countChecks("+element.id+")'/>" +
+                    "&nbsp;&nbsp; " + element.title + 
+                "</div>" +
                 "<div class='col-3' style='height: 60px;'></div> </div>";
     return comp;        
                 
@@ -48,7 +48,7 @@ function countChecks(id){
     if(checkedCount>=5){
         let promise = new Promise(function(resolve, reject){
             setTimeout(function(){
-                alert('success')
+                alert('Congrats. 5 Tasks have been Successfully Completed');
             }, 1000);
         });
     }

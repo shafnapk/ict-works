@@ -39,6 +39,7 @@
     }
 
 function validate(callback){
+    event.preventDefault()
     
     let naml = document.getElementById("username");
     let namlv = naml.value;
